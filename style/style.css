@@ -1,0 +1,151 @@
+/* ESTRUTURAÇÃO PÁGINA BODY */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #bdc3b0;
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* DIVS FORMS LOGIN */
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#h2login {
+  font-family: "Montserrat alternates", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px; /* Diminui a largura máxima */
+  height: auto; /* Altera a altura para se adaptar melhor */
+  max-height: 395px;
+  font-family: "Montserrat alternates", sans-serif;
+  text-align: center;
+  color: white;
+  background-color: #023412;
+  border-radius: 6px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  padding: 20px; /* Adiciona padding interno */
+  box-sizing: border-box; /* Para garantir que o padding não aumente a largura total */
+}
+
+/* INPUT BUTTON */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  max-width: 100%; /* Permite que o input utilize toda a largura do container */
+  padding: 10px;
+  font-size: 16px;
+  border: 0.5px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  margin: 10px 0; /* Remove margem lateral */
+  font-family: "Roboto", sans-serif;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #2bd131;
+  background-color: #fff;
+}
+
+input[type="email"],
+input[type="password"] {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="password"] {
+  font-family: "Roboto", sans-serif;
+}
+
+/* LOGIN BUTTON */
+#btnlogin {
+  font-family: "Montserrat alternates", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #f8f8f8;
+  width: 100%; /* Botão ocupa toda a largura */
+  border: 0;
+  padding: 5px;
+  color: #044606f3;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 15px 0; /* Remove margem lateral */
+  border-radius: 5px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* LINK USUÁRIO NÃO CADASTRADO */
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Montserrat alternates", sans-serif;
+}
+
+a:hover {
+  color: #07790b;
+}
+
+#admbutton {
+  font-family: "Montserrat alternates", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #f8f8f8;
+  width: auto; /* Mantém o tamanho original */
+  min-width: 150px; /* Define uma largura mínima */
+  border: 0;
+  padding: 3.5px 10px; /* Aumenta um pouco a margem */
+  color: #044606f3;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 15px; 
+  border-radius: 5px;
+  position: fixed;
+  bottom: 10px; /* Distância do fundo */
+  right: 10px; /* Distância da direita */
+  text-align: center;  
+  font-weight: bold;
+}
+
+#admbutton:hover {
+  background-color: #07790b;
+  color: #ffffff;
+}
+
+#h3email, #h3senha {
+  font-family: "Montserrat alternates", sans-serif;
+  margin: 0;
+}
+
+#btnlogin:hover {
+  background-color: #07790b;
+  color: #ffffff;
+}
+
+/* Adicionando estilos responsivos */
+@media (max-width: 600px) {
+  .container {
+    width: 90%; /* Largura da tela em dispositivos menores */
+    max-width: 350px; /* Define uma largura máxima menor para dispositivos pequenos */
+    padding: 20px; /* Adiciona padding */
+    margin: 0 auto; /* Centraliza o container */
+  }
+
+
+  #admbutton {
+    width: auto; /* Mantém o tamanho original */
+    min-width: 120px; /* Define uma largura mínima menor para dispositivos pequenos */
+  }
+}
